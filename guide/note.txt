@@ -94,6 +94,7 @@ submit issue.md sebagai github issue baru
 
 pakai agent yang lebih rendah untuk mengerjakan link github issue terbaru !
 
+Buatkan pull request ke branch master di github atas perubahan ini
 
 =======================================
 
@@ -149,3 +150,6 @@ submit issue.md sebagai github issue baru
 =======================================
 
 pakai agent yang lebih rendah untuk mengerjakan link github issue terbaru !
+
+kali ini agak divariasikan tp sama saja
+Buatkan branch feature/user-login, commit di branch itu, lalu buat PR di github
