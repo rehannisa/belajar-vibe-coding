@@ -31,6 +31,121 @@ Kerjakan github issue : [https://github.com/rehannisa/belajar-vibe-coding/issues
 Buatkan pull request ke branch master di github atas perubahan ini
 
 
+=======================================
+
+Cek di file drizzle.config.ts
+Buat database secara manual, dlm hal ini menggunakan mysql (sesuaikan confignya di file drizzle.config.ts tersebut)
 
 
-hehehe
+=======================================
+
+ini mengulang lagi pada langkah awal gunakan model AI yang lebih tinggi !
+
+Buatkan issue.md (yg lama dihapus dulu), yang berisi perencanaan untuk nanti diimplementasikan oleh junior programer atau AI model yang lebih murah.
+
+Isi dari planingnya adalah sebagai berikut :
+
+buat table users:
+id integer auto increment
+name varchar 255 not null
+email varchar 255 not null
+password varchar 255 not null (password merupakah hash dari bcrypt)
+created_at timestamp default current_timestamp
+
+Buatkan API untuk registrasi user baru
+
+Endpoint : POST /api/users
+
+Request Body :
+
+{
+    "name" : "Eko",
+    "email" : "eko@localhost",
+    "password" : "rahasia"
+}
+
+Response Body (Success):
+
+{
+    "data" : "OK"
+}
+
+Response Body (Error):
+
+{
+    "error" : "Email sudah terdaftar"
+}
+
+Struktur folder di dalam src
+- routes : ini berisi routing ElysiaJS
+- services : ini berisi logic bisnis aplikasi
+
+Struktur file
+- routes : menggunakan format misal users-route.ts
+-services : menggunakan format misal users-service.ts
+
+Jelaskan tahapan-tahapan yang harus dilakukan untuk mengimplementasikan fitur ini, anggap nanti yang mengimplementasikan adalah junior programer atau model AI yang lebih murah.
+
+---------------------------------------
+
+submit issue.md sebagai github issue baru
+
+=======================================
+
+pakai agent yang lebih rendah untuk mengerjakan link github issue terbaru !
+
+
+=======================================
+
+ini mengulang lagi pada langkah awal gunakan model AI yang lebih tinggi !
+
+Buatkan issue.md (yg lama dihapus dulu), yang berisi perencanaan untuk nanti diimplementasikan oleh junior programer atau AI model yang lebih murah.
+
+Isi dari planingnya adalah sebagai berikut :
+
+buat table sessions:
+id integer auto increment
+token varchar 255 not null (isinya UUID untuk token user yang login)
+user_id integer (FK ke table users)
+created_at timestamp default current_timestamp
+
+Buatkan API untuk login user
+
+Endpoint : POST /api/users/login
+
+Request Body :
+
+{
+    "email" : "eko@localhost",
+    "password" : "rahasia"
+}
+
+Response Body (Success):
+
+{
+    "data" : "OK"
+}
+
+Response Body (Error):
+
+{
+    "error" : "Email atau password salah"
+}
+
+Struktur folder di dalam src
+- routes : ini berisi routing ElysiaJS
+- services : ini berisi logic bisnis aplikasi
+
+Struktur file
+- routes : menggunakan format misal users-route.ts
+-services : menggunakan format misal users-service.ts
+
+Jelaskan tahapan-tahapan yang harus dilakukan untuk mengimplementasikan fitur ini, anggap nanti yang mengimplementasikan adalah junior programer atau model AI yang lebih murah.
+
+---------------------------------------
+
+submit issue.md sebagai github issue baru
+
+=======================================
+
+pakai agent yang lebih rendah untuk mengerjakan link github issue terbaru !
