@@ -153,3 +153,68 @@ pakai agent yang lebih rendah untuk mengerjakan link github issue terbaru !
 
 kali ini agak divariasikan tp sama saja
 Buatkan branch feature/user-login, commit di branch itu, lalu buat PR di github
+
+***************************************
+
+pindah ke branch main, pull terbaru
+
+
+=======================================
+
+ini mengulang lagi pada langkah awal gunakan model AI yang lebih tinggi !
+
+Buatkan issue.md (yg lama dihapus dulu), yang berisi perencanaan untuk nanti diimplementasikan oleh junior programer atau AI model yang lebih murah.
+
+Isi dari planingnya adalah sebagai berikut :
+
+buat table sessions:
+id integer auto increment
+token varchar 255 not null (isinya UUID untuk token user yang login)
+user_id integer (FK ke table users)
+created_at timestamp default current_timestamp
+
+Buatkan API untuk get user saat ini yang sedang login
+
+Endpoint : POST /api/users/current
+
+Headers :
+- Authorization: Bearer <token> (token adalah token yang ada di table users)
+
+Response Body (Success):
+
+{
+    "data" : {
+        "id" : 1,
+        "name" : "eko",
+        "email" : "eko@localhost",
+        "created_at" : "timestamp"
+    }
+}
+
+Response Body (Error):
+
+{
+    "error" : "Unauthorized"
+}
+
+Struktur folder di dalam src
+- routes : ini berisi routing ElysiaJS
+- services : ini berisi logic bisnis aplikasi
+
+Struktur file
+- routes : menggunakan format misal users-route.ts
+-services : menggunakan format misal users-service.ts
+
+Jelaskan tahapan-tahapan yang harus dilakukan untuk mengimplementasikan fitur ini, anggap nanti yang mengimplementasikan adalah junior programer atau model AI yang lebih murah.
+
+---------------------------------------
+
+submit issue.md sebagai github issue baru
+
+=======================================
+
+pakai agent yang lebih rendah untuk mengerjakan link github issue terbaru !
+implementasikan <link github issue>
+
+kali ini agak divariasikan lg tp sama saja (lebih simple krn sudah mengenal dr sebelumnya)
+commit dan buatkan PR ke branch main
